@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class NomJoueurs {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		//Demande du nom pour le joueur 1
 		
 		System.out.println("Nom du joueur 1 : ");
@@ -18,7 +18,10 @@ public class NomJoueurs {
 		Scanner nomJoueur2 = new Scanner(System.in);
 		String nomEntré2 = nomJoueur2.next();
 		
+		Thread.sleep(2000);
 		System.out.println("Joueur 1 : " +  nomEntré1);
+		
+		Thread.sleep(2000);
 		System.out.println("Joueur 2 : " +  nomEntré2);
 		
 		
@@ -34,6 +37,8 @@ public class NomJoueurs {
 		Scanner var2 = new Scanner (System.in);
 		int b = var2.nextInt();
 		
+		
+		Thread.sleep(2000);
 		if ((a>= 18) && (b>= 18) ) {
 			System.out.println("Welcome guys!!");
 		}
